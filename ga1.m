@@ -33,7 +33,7 @@ function [bestIndividual,fitnessBestIndividual] = ga1(data,fuzzyDatabaseParamete
     [fitness,index] = sort(fitness,'descend');
     population = population(index,:);
     bestIndividual = population(1,:);
-    fitnessBestIndividual = fitness(1)
+    fitnessBestIndividual = fitness(1);
     
     % Repeat while the total number of generations is not reached.
     while (generation < nGer)
@@ -74,7 +74,7 @@ function [bestIndividual,fitnessBestIndividual] = ga1(data,fuzzyDatabaseParamete
         [fitness,index] = sort(fitness,'descend');
         population = population(index,:);
         bestGenerationIndividual = population(1,:);
-        fitnessGenerationBestIndividual = fitness(1)
+        fitnessGenerationBestIndividual = fitness(1);
         
         % Update the best individual (solution).
         if (fitnessGenerationBestIndividual > fitnessBestIndividual)
